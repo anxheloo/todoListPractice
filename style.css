@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  padding: 20px;
+  column-gap: 10px;
+  box-sizing: border-box;
+}
+
+.todo-title {
+  /* display: block;  not neccessary, cuz is a default value for headings*/
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.todo-input {
+  flex: auto;
+  padding: 8px 10px; /* Adjust the padding values as needed */
+  border: 1px solid black;
+  height: 35px; /* Adjust the height value as needed */
+  width: 200px;
+  /* max-width: 200px; */
+}
+.date-input {
+  flex: auto;
+  padding: 8px 10px; /* Adjust the padding values as needed */
+  border: 1px solid black;
+  height: 35px; /* Adjust the height value as needed */
+  width: 150px;
+  /* max-width: 150px; */
+}
+
+.todo-btn1 {
+  flex: auto;
+}
+
+.todo-btn1,
+.delete-button {
+  background: rgb(44, 211, 44);
+  color: white;
+  height: 35px;
+  border: none;
+  width: 80px;
+  /* max-width: 80px; */
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.todo-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  border: 1px solid red;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.todo-item {
+  display: flex;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.todo-element {
+  flex: auto;
+  /* max-width: 200px; */
+  width: 200px;
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+  line-height: 35px;
+}
+
+.todo-date {
+  flex: auto;
+  width: 150px;
+  /* max-width: 150px; */
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+  line-height: 35px;
+}
+
+.delete-button {
+  background: rgb(191, 36, 36);
+  flex: auto;
+  /* flex: 1 0 auto; */
+}
+
+@media (max-width: 600px) {
+  .todo-element {
+    width: 80%;
+  }
+
+  .todo-input {
+    width: 80%;
+  }
+}
