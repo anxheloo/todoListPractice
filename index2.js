@@ -29,26 +29,26 @@ function displayTodos() {
   todoContainer.innerHTML = "";
 
   for (let i = 0; i < listOfObjects.length; i++) {
-    //create the main div for todo elements
+    //2.create the main div for todo elements
     const todoItem = document.createElement("div");
     todoItem.classList.add("todo-item");
 
-    // create p tag for the todo text
-    const todoElement = document.createElement("p");
+    // 3.create p tag for the todo text
+    const todoElement = document.createElement("div");
     todoElement.classList.add("todo-element");
     todoElement.textContent = listOfObjects[i].name;
 
-    // create p tag for the date text
-    const dateElement = document.createElement("p");
+    // 4.create p tag for the date text
+    const dateElement = document.createElement("div");
     dateElement.classList.add("todo-date");
     dateElement.textContent = listOfObjects[i].dueDate;
 
-    // create button tag for the delete button
+    // 5.create button tag for the delete button
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete";
     deleteButton.classList.add("delete-button");
 
-    // add elements to the main div for todo elements
+    // 6.add elements to the main div for todo elements
     todoItem.appendChild(todoElement);
     todoItem.appendChild(dateElement);
     todoItem.appendChild(deleteButton);
@@ -59,7 +59,7 @@ function displayTodos() {
       let answer;
       do {
         answer = window.prompt("Are you sure (y/n)?");
-        if (
+        while (
           answer !== "yes" &&
           answer !== "no" &&
           answer !== "y" &&

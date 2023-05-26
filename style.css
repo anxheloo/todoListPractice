@@ -27,7 +27,6 @@
 }
 
 .todo-title {
-  /* display: block;  not neccessary, cuz is a default value for headings*/
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -38,7 +37,6 @@
   border: 1px solid black;
   height: 35px; /* Adjust the height value as needed */
   width: 200px;
-  /* max-width: 200px; */
 }
 .date-input {
   flex: auto;
@@ -46,21 +44,16 @@
   border: 1px solid black;
   height: 35px; /* Adjust the height value as needed */
   width: 150px;
-  /* max-width: 150px; */
-}
-
-.todo-btn1 {
-  flex: auto;
 }
 
 .todo-btn1,
 .delete-button {
+  flex: auto;
   background: rgb(44, 211, 44);
   color: white;
   height: 35px;
   border: none;
   width: 80px;
-  /* max-width: 80px; */
   padding: 8px 10px;
   cursor: pointer;
 }
@@ -87,7 +80,6 @@
 
 .todo-element {
   flex: auto;
-  /* max-width: 200px; */
   width: 200px;
   border: 1px solid black;
   text-align: center;
@@ -98,7 +90,6 @@
 .todo-date {
   flex: auto;
   width: 150px;
-  /* max-width: 150px; */
   border: 1px solid black;
   text-align: center;
   align-items: center;
@@ -107,9 +98,18 @@
 
 .delete-button {
   background: rgb(191, 36, 36);
-  flex: auto;
-  /* flex: 1 0 auto; */
 }
+
+/* 
+FOR DISPLAYING OUR BOXS IN COLUMNS , INSTEAD OF FLEX, WE CAN USE CSS GRID STYLE.
+
+
+.todo-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+} */
 
 @media (max-width: 600px) {
   .todo-element {
@@ -120,3 +120,9 @@
     width: 80%;
   }
 }
+
+/*
+
+
+
+*/
